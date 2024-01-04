@@ -1,0 +1,33 @@
+#+title:  AC de Souza's personal NeoVim config for a Ruby on Rails web developer.
+#+author: acdesouza
+#+date:   2023-03-25
+
+* NeoVim
+
+  This is my attempt to document my usage of neovim and their Lua plugins.
+
+** Usage
+
+   My primary usage for NeoVim is as a code editor for Ruby on Rails applications.
+   My way to use it is to open Vim in the the application's root directory. And, from there, I find the files I want to see and/or change.
+   I usually use one window for a task. Splitting it to show each file I need to change for that particular task.
+
+
+* Installation
+
+  For managing the plugins I will use [[https://github.com/folke/lazy.nvim][lazy.nvim]].
+  I don't have any particular reason to use it. It's was just _the first I heard about_ on this NeoVim World.
+
+  #+begin_src bash
+  $ mkdir ~/.config/
+  $ cd ~/.config/
+  $ git clone https://github.com/acdesouza/neovim_config.git ~/.config/nvim
+  $ nvim --headless  "+Lazy! install" +qa
+  #+end_src
+
+
+* Customization
+
+  - I will avoid any plugin using other script languages different from the defaults: lua and VimScript
+  - I moved the leader key from ~\~ to ~Space~, a.k.a, ~<SPC>~. It's closer to other keys
+  - Colorscheme [[https://github.com/catppuccin/nvim][Catppuccin Mocha]]
