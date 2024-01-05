@@ -31,7 +31,8 @@
   - I will avoid any plugin using other script languages different from the defaults: lua and VimScript
   - I moved the leader key from ~\~ to ~Space~, a.k.a, ~<SPC>~. It's closer to other keys
   - Colorscheme [[https://github.com/catppuccin/nvim][Catppuccin Mocha]]
-  - Show line number on cursor's line. And distance from current line in others.
+  - Show line number on cursor's line. And distance from current line in others
+  - Sync clipboard with OS. So, you can yank/copy on Vim and paste everywhere
 
 ** Plugins
 

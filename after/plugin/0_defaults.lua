@@ -3,3 +3,8 @@
 -- Show line number on cursor's line. And distance from current line in others.
 vim.wo.number = true          --Make line numbers default
 vim.wo.relativenumber = true  --Make relative line numbers default
+
+-- Sync clipboard between OS and NeoVim.
+--  Remove this option if you want your OS clipboard to remain independent.
+--  See `:help 'clipboard'`
+vim.o.clipboard = 'unnamedplus'
