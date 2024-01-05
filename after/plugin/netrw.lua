@@ -5,6 +5,8 @@ vim.g.netrw_altv = 1	     -- change from left splitting to right splitting
 vim.g.netrw_liststyle = 3    -- tree style view in netrw
 vim.g.netrw_preview   = 1    -- allows file preview
 
+vim.g.netrw_list_hide = table.concat(vim.fn.split(vim.o.wildignore, ','), ',')
+
 -- Toggle netrw and file buffer using <Leader>e
 vim.api.nvim_set_keymap('n', '<Leader>e', ':e .<CR>', { noremap = true, silent = true })
 

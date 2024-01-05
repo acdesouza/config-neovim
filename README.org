@@ -34,6 +34,7 @@
   - Show line number on cursor's line. And distance from current line in others
   - Sync clipboard with OS. So, you can yank/copy on Vim and paste everywhere
   - Always change tabs to spaces. And a tab is set to 2 spaces
+  - Setup wildignore for git, MacOS, node, and Rails
 
 ** Plugins
 
