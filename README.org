@@ -31,3 +31,17 @@
   - I will avoid any plugin using other script languages different from the defaults: lua and VimScript
   - I moved the leader key from ~\~ to ~Space~, a.k.a, ~<SPC>~. It's closer to other keys
   - Colorscheme [[https://github.com/catppuccin/nvim][Catppuccin Mocha]]
+
+** Plugins
+
+  - [[https://www.vim.org/scripts/script.php?script_id=1075][netrw]] :: Default Vim File Manager customized to a [[http://vimcasts.org/blog/2013/01/oil-and-vinegar-split-windows-and-project-drawer/][card-flip experience, instead of a Project Drawer]].
+    The 
+    - ~<leader>e~: Toggles "flips the card" to show the current dir in netrw as a tree-viewer or current buffer
+    - ~gn~ :: Sets the dir under cursor as treetop
+    - ~<Enter>~: Opens file under cursor in the current window. "Flipping the card" back to the "file view"
+    - ~d~: Create a new directory in directory selected by ~<Enter>~
+    - ~%~: Create a new file in directory selected by ~<Enter>~
+    - ~p~: Open a preview of the file under cursor
+    - ~Ctrl-w z~: Close file preview
+    - ~R~:  Moves/Renames the file/directory under cursor 
+
