@@ -53,3 +53,10 @@
     - ~gT~ or ~<M-[>~: Move to the Vim tab on the ~left~ of the current one
     - ~gt~ or ~<M-]>~: Move to the Vim tab on the ~right~ of the current one
     - ~{i}gt~: Move to the Vim tab on position {i}
+
+  - [[https://github.com/christoomey/vim-tmux-navigator][vim-tmux-navigator]] :: Allows to move from Vim to Tmux Pane using the same keybindings.
+    - Do not move to Tmux Pane, or Window, when zoomed.
+    - ~<C-h>~: Move to the Vim Window Split or Tmux Pane on the ~left~ of current one
+    - ~<C-j>~: Move to the Vim Window Split or Tmux Pane ~below~ current one
+    - ~<C-k>~: Move to the Vim Window Split or Tmux Pane ~above~ current one
+    - ~<C-l>~: Move to the Vim Window Split or Tmux Pane on the ~right~ of current one
