@@ -39,7 +39,6 @@
 ** Plugins
 
   - [[https://www.vim.org/scripts/script.php?script_id=1075][netrw]] :: Default Vim File Manager customized to a [[http://vimcasts.org/blog/2013/01/oil-and-vinegar-split-windows-and-project-drawer/][card-flip experience, instead of a Project Drawer]].
-    The 
     - ~<leader>e~: Toggles "flips the card" to show the current dir in netrw as a tree-viewer or current buffer
     - ~gn~: Sets the dir under cursor as treetop
     - ~<Enter>~: Opens file under cursor in the current window. "Flipping the card" back to the "file view"
@@ -48,3 +47,9 @@
     - ~p~: Open a preview of the file under cursor
     - ~Ctrl-w z~: Close file preview
     - ~R~:  Moves/Renames the file/directory under cursor 
+
+  - [[https://vim.fandom.com/wiki/Using_tab_pages][Vim tabs]] :: Just like browser tabs. I use it to concentrate all the files I need to change something. Then I create a new tab for _offtopics_
+    - ~<C-t>~: Create a new tab
+    - ~gT~ or ~<M-[>~: Move to the Vim tab on the ~left~ of the current one
+    - ~gt~ or ~<M-]>~: Move to the Vim tab on the ~right~ of the current one
+    - ~{i}gt~: Move to the Vim tab on position {i}
