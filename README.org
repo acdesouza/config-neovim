@@ -53,6 +53,9 @@
     - ~gT~ or ~<M-[>~: Move to the Vim tab on the ~left~ of the current one
     - ~gt~ or ~<M-]>~: Move to the Vim tab on the ~right~ of the current one
     - ~{i}gt~: Move to the Vim tab on position {i}
+  - [[https://github.com/crispgm/nvim-tabline][nvim-tabline]
+    - It shows the tab index so I can <N>gt to Go to Tab with index <N>
+    - It shows a pretty icon for the file extension
 
   - [[https://github.com/christoomey/vim-tmux-navigator][vim-tmux-navigator]] :: Allows to move from Vim to Tmux Pane using the same keybindings.
     - Do not move to Tmux Pane, or Window, when zoomed.
