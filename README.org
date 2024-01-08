@@ -53,7 +53,8 @@
     - ~gT~ or ~<M-[>~: Move to the Vim tab on the ~left~ of the current one
     - ~gt~ or ~<M-]>~: Move to the Vim tab on the ~right~ of the current one
     - ~{i}gt~: Move to the Vim tab on position {i}
-  - [[https://github.com/crispgm/nvim-tabline][nvim-tabline]
+
+  - [[https://github.com/crispgm/nvim-tabline][nvim-tabline]] :: Helps adding a number on the tab to jump to it. And I like the icons.
     - It shows the tab index so I can <N>gt to Go to Tab with index <N>
     - It shows a pretty icon for the file extension
 
@@ -63,3 +64,13 @@
     - ~<C-j>~: Move to the Vim Window Split or Tmux Pane ~below~ current one
     - ~<C-k>~: Move to the Vim Window Split or Tmux Pane ~above~ current one
     - ~<C-l>~: Move to the Vim Window Split or Tmux Pane on the ~right~ of current one
+
+  - [[https://github.com/nvim-lualine/lualine.nvim][lualine.nvim]] :: Just a fancy and pretty status line with filetype icons from [[https://github.com/nvim-tree/nvim-web-devicons][nvim-web-devicons]].
+    - Fancy status line for showing: 
+      - Vim current mode, 
+      - current git branch, 
+      - relative filename, 
+      - file encoding, 
+      - filetype fancy icon
+      - Cursor position percentage of the file
+      - Current cursor's line:column 
