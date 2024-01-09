@@ -81,3 +81,18 @@
     - ~<Leader>fb~: [F]ind [B]uffers
     - ~<Leader>gs~: [G]rep [S]tring
     - ~<Leader>p~ : [P]roject finder
+
+
+  - Language Server Protocol :: [[https://langserver.org][LSP]] is the current trend on editor code analisys. 
+    The /tl;dr:/ is Microsoft VS Code gave birth to the idea of extracting out from the editor the code responsilble for language specific code-highlight, formatting, and diagnosis.
+    I setup it following the [[https://vonheikemen.github.io/devlog/tools/neovim-lsp-client-guide/][guide on Neovim's LSP client]] by @VonHeikemen_(author of [[https://github.com/VonHeikemen/lsp-zero.nvim][LSP Zero]] Neovim plugin.
+    - ~K~: Show docs under cursor
+    - ~gd~: Requests LSP for [g]o to the ~[d]efinition~ under cursor
+    - ~gD~: Requests LSP for [g]o to the ~[D]eclaration~ under cursor
+    - ~gi~: Requests LSP for [g]o to the ~implementation~ under cursor
+    - ~go~: Requests LSP for [g]o to the ~type definiti[o]n~ under cursor
+    - ~gr~: Requests LSP for [g]o to the ~[r]eferences~ under cursor
+    - ~<F2>~: Requests LSP for ~rename~ symbol under cursor
+    - ~<F3>~: Requests LSP for ~format~ current file/selection
+    - ~<F4>~: Request LSP for execute ~code_action~ on line under cursor
+    - ~<TAB>~: On Insert Mode to execute [[https://vim.fandom.com/wiki/Omni_completion][Vim default's omnifunc]].
