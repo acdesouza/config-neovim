@@ -74,3 +74,10 @@
       - filetype fancy icon
       - Cursor position percentage of the file
       - Current cursor's line:column 
+
+  - [[https://github.com/nvim-telescope/telescope.nvim][telescope.nvim]] :: Fuzzy finder, Live Grep, and Bookmark directories as Projects. All with a fancy file preview. Filetype code highlighting enabled.
+    - ~<Leader>ff~: [F]ind [F]iles
+    - ~<Leader>fg~: [F]ind using [G]rep
+    - ~<Leader>fb~: [F]ind [B]uffers
+    - ~<Leader>gs~: [G]rep [S]tring
+    - ~<Leader>p~ : [P]roject finder
