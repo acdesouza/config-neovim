@@ -116,3 +116,15 @@
       - ~gl~: Shows diagnostics in a floating window
       - ~[d~: Moves to the previous diagnostic
       - ~]d~: Moves to the next diagnostic
+
+  - [[https://github.com/vim-ruby/vim-ruby][Ruby]] on [[https://github.com/tpope/vim-rails][Rails]] :: Currently The Best Vim plugins to navigate Ruby on Rails projects. Thanks [[https://github.com/tpope][Tim Pope]]!
+    - ~gd~: Go to Model under the cursor
+    - ~gf~: Smart go to ~stuff~ under cursor.
+      - Go to Model definition on a relationship(has_one, belongs_to, has_many, habtm) definition
+      - Go to View template file with same name of the the Controller Action
+      - Go to partial definition
+    - ~:AS~: Horizontally split the current window and open the [A]lternate file above
+    - ~:RS~: Horizontally split the current window and open the [R]elate file above
+    - ~:Rails~: Run test case file in current buffer
+    - ~:.Rails~: Run test under cursor
+    - ~:Extract {file}~: Creates a new ~{file}~ with current selection, on View template, and replace it with ~render {file}~

@@ -39,9 +39,11 @@ return {
           completeopt = 'menuone,noselect'
         },
         sources = {
-          { name = 'nvim_lsp' },
-          { name = 'luasnip' },
-          { name = 'buffer' },
+          { name = 'nvim_lsp'  },
+          { name = 'luasnip'   },
+          { name = 'vim-rails' },
+          { name = 'vim-ruby'  },
+          { name = 'buffer'    },
         },
         snippet = {
           expand = function(args)
