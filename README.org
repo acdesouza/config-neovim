@@ -85,14 +85,34 @@
 
   - Language Server Protocol :: [[https://langserver.org][LSP]] is the current trend on editor code analisys. 
     The /tl;dr:/ is Microsoft VS Code gave birth to the idea of extracting out from the editor the code responsilble for language specific code-highlight, formatting, and diagnosis.
-    I setup it following the [[https://vonheikemen.github.io/devlog/tools/neovim-lsp-client-guide/][guide on Neovim's LSP client]] by @VonHeikemen_(author of [[https://github.com/VonHeikemen/lsp-zero.nvim][LSP Zero]] Neovim plugin.
-    - ~K~: Show docs under cursor
-    - ~gd~: Requests LSP for [g]o to the ~[d]efinition~ under cursor
-    - ~gD~: Requests LSP for [g]o to the ~[D]eclaration~ under cursor
-    - ~gi~: Requests LSP for [g]o to the ~implementation~ under cursor
-    - ~go~: Requests LSP for [g]o to the ~type definiti[o]n~ under cursor
-    - ~gr~: Requests LSP for [g]o to the ~[r]eferences~ under cursor
-    - ~<F2>~: Requests LSP for ~rename~ symbol under cursor
-    - ~<F3>~: Requests LSP for ~format~ current file/selection
-    - ~<F4>~: Request LSP for execute ~code_action~ on line under cursor
-    - ~<TAB>~: On Insert Mode to execute [[https://vim.fandom.com/wiki/Omni_completion][Vim default's omnifunc]].
+    My initial attempt was to setup it following the [[https://vonheikemen.github.io/devlog/tools/neovim-lsp-client-guide/][guide on Neovim's LSP client]] by @VonHeikemen_(author of [[https://github.com/VonHeikemen/lsp-zero.nvim][LSP Zero]] Neovim plugin. But, I wanted it with all the bells and whistles with automatic downloads and stylish code completion.
+    - [[https://github.com/neovim/nvim-lspconfig][nvim-lspconfig]] :: Pre-defined config for multiple Language Servers
+    - [[https://github.com/williamboman/mason.nvim][mason]] :: Automatically download Language Servers
+      - Default LS installed: 
+        - 'lua_ls': Neovim config files in Lua, 
+        - 'solargraph': Ruby
+        - 'emmet_language_server', and 'html': HTML, CSS, JavaScript
+    - [[https://github.com/williamboman/mason-lspconfig.nvim][mason-lspconfig]] :: Bridge between nvim-lspconfig and mason
+    - [[https://github.com/hrsh7th/nvim-cmp][nvim-cmp]] :: Completion engine plugin
+      - ~<TAB>~: Selects the next option and autoselect it if there is only one option
+      - ~<S-TAB>~: Selects the previous option
+      - ~<CR>~: Confirm completion current selection
+      - ~<C-e>~: Cancel completion
+      - ~<C-u>~: Scroll docs up
+      - ~<C-d>~: Scroll docs down
+    - [[https://github.com/hrsh7th/cmp-nvim-lsp][cmp-nvim-lsp]] :: Config a Language Server as source for nvim-cmp
+    - [[https://github.com/L3MON4D3/LuaSnip][LuaSnip]] :: Snippet engine supporting expansion of Language Server Snippets with nvim-cmp
+    
+    - [[https://github.com/VonHeikemen/lsp-zero.nvim/blob/v3.x/doc/md/api-reference.md#lsp-actions][Lsp-zero Keybindings]]
+      - ~K~: Show docs under cursor
+      - ~gd~: Requests LSP to [g]o to the ~[d]efinition~ under cursor
+      - ~gD~: Requests LSP to [g]o to the ~[D]eclaration~ under cursor
+      - ~gi~: Requests LSP to list all ~implementations~ under cursor in the quickfix window
+      - ~go~: Requests LSP to [g]o to the ~type definiti[o]n~ under cursor
+      - ~gr~: Requests LSP to list all ~[r]eferences~ under cursor in the quickfix window
+      - ~<F2>~: Requests LSP to ~rename~ symbol under cursor
+      - ~<F3>~: Requests LSP to ~format~ current buffer
+      - ~<F4>~: Request LSP to execute ~code_action~ under cursor
+      - ~gl~: Shows diagnostics in a floating window
+      - ~[d~: Moves to the previous diagnostic
+      - ~]d~: Moves to the next diagnostic
