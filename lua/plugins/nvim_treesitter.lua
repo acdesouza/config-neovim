@@ -1,0 +1,24 @@
+return {
+  {
+    'nvim-treesitter/nvim-treesitter',
+    build = function()
+      require("nvim-treesitter.install").update({ with_sync = true })
+    end,
+    dependencies = {
+      "RRethy/nvim-treesitter-endwise", -- Needed to prevent treesitter ident issue with Ruby: https://github.com/tree-sitter/tree-sitter-ruby/issues/230#issuecomment-1312403487
+      "yioneko/nvim-yati"
+    },
+    config = function()
+      require'nvim-treesitter.configs'.setup({
+        ensure_installed = { "lua", "html", "embedded_template", "css", "scss", "javascript", "ruby" },
+        highlight = {
+          enable  = { "html", "xml", "eruby", "embedded_template", "css", "scss", "javascript" },--true
+          disable = { "lua" }
+        },
+        endwise = {
+          enable = true,
+        },
+      })
+    end
+  }
+}
