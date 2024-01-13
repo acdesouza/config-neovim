@@ -133,3 +133,14 @@
     - ~:Rails~: Run test case file in current buffer
     - ~:.Rails~: Run test under cursor
     - ~:Extract {file}~: Creates a new ~{file}~ with current selection, on View template, and replace it with ~render {file}~
+
+    - [[https://github.com/nvim-orgmode/orgmode][nvim-orgmode]] :: It's [[http://orgmode.org][Orgmode]] clone written in Lua. I really like the Emacs org-mode for note taking. The ability to managing all offline in plain text, add a task "without context switching", tagging the tasks, and the Org Agenda are awesome.
+      - [[https://github.com/nvim-orgmode/orgmode#links-are-not-concealed][Conceal links]]: Hidding the links on Org files
+      - ~<Leader>oc~: Capture a new task
+      - ~<Leader>or~: Refile(move to another file/subtree) current subtree
+      - ~<Leader>oa~: Open Org Agenda
+      - ~<TAB>~: Toggle folding on current headline
+      - ~{~: Go to previous headline
+      - ~}~: Go to next headline
+      - ~<Leader><CR>~: Add headline, list item or checkbox (context aware)
+      - ~g?~: Org-mode Help for more keybindings

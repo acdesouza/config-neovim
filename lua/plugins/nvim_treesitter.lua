@@ -10,11 +10,12 @@ return {
     },
     config = function()
       require'nvim-treesitter.configs'.setup({
-        ensure_installed = { "lua", "html", "embedded_template", "css", "scss", "javascript", "ruby" },
+        ensure_installed = { "lua", "html", "embedded_template", "css", "scss", "javascript", "ruby", "org" },
         highlight = {
-          enable  = { "html", "xml", "eruby", "embedded_template", "css", "scss", "javascript" },--true
+          enable  = { "html", "xml", "eruby", "embedded_template", "css", "scss", "javascript", "org" },--true
           disable = { "lua" }
         },
+        additional_vim_regex_highlighting = { "org" }, --false,
         endwise = {
           enable = true,
         },

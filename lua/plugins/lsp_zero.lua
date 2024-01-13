@@ -43,6 +43,7 @@ return {
           { name = 'luasnip'   },
           { name = 'vim-rails' },
           { name = 'vim-ruby'  },
+          { name = 'orgmode'   },
           { name = 'buffer'    },
         },
         snippet = {
