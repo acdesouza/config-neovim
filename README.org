@@ -35,6 +35,7 @@
   - Sync clipboard with OS. So, you can yank/copy on Vim and paste everywhere
   - Always change tabs to spaces. And a tab is set to 2 spaces
   - Setup wildignore for git, MacOS, node, and Rails
+  - Remove trailing whitespaces on the end of each line
 
 ** Plugins
 
@@ -46,7 +47,7 @@
     - ~%~: Create a new file in directory selected by ~<Enter>~
     - ~p~: Open a preview of the file under cursor
     - ~Ctrl-w z~: Close file preview
-    - ~R~:  Moves/Renames the file/directory under cursor 
+    - ~R~:  Moves/Renames the file/directory under cursor
 
   - [[https://vim.fandom.com/wiki/Using_tab_pages][Vim tabs]] :: Just like browser tabs. I use it to concentrate all the files I need to change something. Then I create a new tab for _offtopics_
     - ~<C-t>~: Create a new tab
@@ -66,14 +67,14 @@
     - ~<C-l>~: Move to the Vim Window Split or Tmux Pane on the ~right~ of current one
 
   - [[https://github.com/nvim-lualine/lualine.nvim][lualine.nvim]] :: Just a fancy and pretty status line with filetype icons from [[https://github.com/nvim-tree/nvim-web-devicons][nvim-web-devicons]].
-    - Fancy status line for showing: 
-      - Vim current mode, 
-      - current git branch, 
-      - relative filename, 
-      - file encoding, 
+    - Fancy status line for showing:
+      - Vim current mode,
+      - current git branch,
+      - relative filename,
+      - file encoding,
       - filetype fancy icon
       - Cursor position percentage of the file
-      - Current cursor's line:column 
+      - Current cursor's line:column
 
   - [[https://github.com/nvim-telescope/telescope.nvim][telescope.nvim]] :: Fuzzy finder, Live Grep, and Bookmark directories as Projects. All with a fancy file preview. Filetype code highlighting enabled.
     - ~<Leader>ff~: [F]ind [F]iles
@@ -83,13 +84,13 @@
     - ~<Leader>p~ : [P]roject finder
 
 
-  - Language Server Protocol :: [[https://langserver.org][LSP]] is the current trend on editor code analisys. 
+  - Language Server Protocol :: [[https://langserver.org][LSP]] is the current trend on editor code analisys.
     The /tl;dr:/ is Microsoft VS Code gave birth to the idea of extracting out from the editor the code responsilble for language specific code-highlight, formatting, and diagnosis.
     My initial attempt was to setup it following the [[https://vonheikemen.github.io/devlog/tools/neovim-lsp-client-guide/][guide on Neovim's LSP client]] by @VonHeikemen_(author of [[https://github.com/VonHeikemen/lsp-zero.nvim][LSP Zero]] Neovim plugin. But, I wanted it with all the bells and whistles with automatic downloads and stylish code completion.
     - [[https://github.com/neovim/nvim-lspconfig][nvim-lspconfig]] :: Pre-defined config for multiple Language Servers
     - [[https://github.com/williamboman/mason.nvim][mason]] :: Automatically download Language Servers
-      - Default LS installed: 
-        - 'lua_ls': Neovim config files in Lua, 
+      - Default LS installed:
+        - 'lua_ls': Neovim config files in Lua,
         - 'solargraph': Ruby
         - 'emmet_language_server', and 'html': HTML, CSS, JavaScript
     - [[https://github.com/williamboman/mason-lspconfig.nvim][mason-lspconfig]] :: Bridge between nvim-lspconfig and mason
@@ -102,7 +103,7 @@
       - ~<C-d>~: Scroll docs down
     - [[https://github.com/hrsh7th/cmp-nvim-lsp][cmp-nvim-lsp]] :: Config a Language Server as source for nvim-cmp
     - [[https://github.com/L3MON4D3/LuaSnip][LuaSnip]] :: Snippet engine supporting expansion of Language Server Snippets with nvim-cmp
-    
+
     - [[https://github.com/VonHeikemen/lsp-zero.nvim/blob/v3.x/doc/md/api-reference.md#lsp-actions][Lsp-zero Keybindings]]
       - ~K~: Show docs under cursor
       - ~gd~: Requests LSP to [g]o to the ~[d]efinition~ under cursor
@@ -117,7 +118,7 @@
       - ~[d~: Moves to the previous diagnostic
       - ~]d~: Moves to the next diagnostic
 
-  - [[https://tree-sitter.github.io/tree-sitter/][Tree-sitter]] :: It's kind of a trend, like LSP, to move things out from the editor. In this case, the language resilient(can handle partially finished) parser. The idea is an external tool building a Abstract Syntax Tree(AST) focused on the current file. 
+  - [[https://tree-sitter.github.io/tree-sitter/][Tree-sitter]] :: It's kind of a trend, like LSP, to move things out from the editor. In this case, the language resilient(can handle partially finished) parser. The idea is an external tool building a Abstract Syntax Tree(AST) focused on the current file.
 
     In my case, combining it with the Catppuccin theme improves the syntaxe highlight.
     I [[https://github.com/tree-sitter/tree-sitter-ruby/issues/230#issuecomment-1312403487][need nvim-treesitter-endwise to fix wrong identation due to ~end~ being a valid Ruby identifier]].
