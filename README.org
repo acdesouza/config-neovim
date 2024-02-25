@@ -118,6 +118,9 @@
       - ~[d~: Moves to the previous diagnostic
       - ~]d~: Moves to the next diagnostic
 
+    - Formatting: Autoformatting enabled for following languages.
+      - Ruby: Solargraph
+
   - [[https://tree-sitter.github.io/tree-sitter/][Tree-sitter]] :: It's kind of a trend, like LSP, to move things out from the editor. In this case, the language resilient(can handle partially finished) parser. The idea is an external tool building a Abstract Syntax Tree(AST) focused on the current file.
 
     In my case, combining it with the Catppuccin theme improves the syntaxe highlight.

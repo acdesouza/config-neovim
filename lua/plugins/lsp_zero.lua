@@ -19,6 +19,12 @@ return {
         -- see :help lsp-zero-keybindings
         -- to learn the available actions
         lsp_zero.default_keymaps({ buffer = bufnr })
+
+        -- make sure you use clients with formatting capabilities
+        -- otherwise you'll get a warning message
+        if client.supports_method('textDocument/formatting') then
+          lsp_zero.buffer_autoformat()
+        end
       end)
 
       lsp_zero.set_sign_icons({
@@ -29,6 +35,17 @@ return {
       })
 
 
+      lsp_zero.format_on_save({
+        format_opts = {
+          async = false,
+          timeout_ms = 10000,
+        },
+        servers = {
+          ['solargraph'] = {'ruby'},
+        }
+      })
+
+
       local cmp = require('cmp')
       local cmp_format = require('lsp-zero').cmp_format()
       local luasnip = require('luasnip')
@@ -36,7 +53,7 @@ return {
         completion = {
           -- Set completeopt to have a better completion experience
           -- https://vimhelp.org/options.txt.html#%27completeopt%27
-          completeopt = 'menuone,noselect'
+          completeopt = 'menuone,popup,noselect'
         },
         sources = {
           { name = 'nvim_lsp'  },
