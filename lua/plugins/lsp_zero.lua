@@ -108,20 +108,12 @@ return {
         },
       })
 
-      -- cmp-nvim-lsp Configuration
-      local cmp_default_capabilities = require('cmp_nvim_lsp').default_capabilities()
 
       require('mason').setup({})
       require('mason-lspconfig').setup({
-        ensure_installed = { 'lua_ls', 'solargraph', 'emmet_language_server', 'html' },
+        ensure_installed = { 'lua_ls', 'emmet_language_server', 'html' },
         handlers = {
           lsp_zero.default_setup,
-
-          solargraph = function()
-            require('lspconfig').solargraph.setup({
-              capabilities = cmp_default_capabilities
-            })
-          end,
 
           html = function()
             require('lspconfig').html.setup({
@@ -130,6 +122,33 @@ return {
           end
         },
       })
+
+      -- ======================================================================
+      -- Non-mason-lspconfig supported
+      -- ======================================================================
+      -------------------------------------------------------------------------
+      -- Ruby - Solargraph
+      -- I could not find a way to install solargraph-rails on the
+      -- mason-lspconfig downloaded version
+      -------------------------------------------------------------------------
+      local capabilities = vim.lsp.protocol.make_client_capabilities()
+      local util = require 'lspconfig.util'
+
+      require('lspconfig').solargraph.setup({
+        cmd = { 'solargraph', 'stdio' },
+        filetypes = { 'ruby' },
+        root_dir = util.root_pattern('Gemfile', '.git'),
+        init_options = {
+          formatter = 'auto',
+        },
+        single_file_support = true,
+
+        on_attach = function(client, bufnr)
+          print('Solargraph attached!')
+        end,
+      })
+      -------------------------------------------------------------------------
+      -- ======================================================================
     end
   },
 }
