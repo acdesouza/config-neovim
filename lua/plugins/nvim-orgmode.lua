@@ -14,7 +14,7 @@ return {
       })
 
       -- Tree-sitter setup
-      plugin.setup_ts_grammar()
+      -- plugin.setup_ts_grammar()
 
       -- Links are not concealed: https://github.com/nvim-orgmode/orgmode#links-are-not-concealed
       vim.opt.conceallevel  = 2
