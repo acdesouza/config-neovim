@@ -49,6 +49,16 @@
     - ~Ctrl-w z~: Close file preview
     - ~R~:  Moves/Renames the file/directory under cursor
 
+  - [[https://github.com/stevearc/oil.nvim][oil.nvim]] :: It's an enhancement on netrw to allow manage directories like a vim buffer. Add files and directories by simply adding their names in a list.
+    - ~<leader>o~: Toggles "flip the card" showing the directories using Oil.
+    - ~_~: Opens current directory
+    - ~-~: Move up directory
+    - ~<C-s>~: Opens entry under cursor in a vertical split
+    - ~<C-h>~: Opens entry under cursor in a horizontal split
+    - ~<C-t>~: Opens entry under cursor in a new tab
+    - ~<C-l>~: Refreshs buffers to reflect changes made outside
+    - ~g?~: Show help
+
   - [[https://vim.fandom.com/wiki/Using_tab_pages][Vim tabs]] :: Just like browser tabs. I use it to concentrate all the files I need to change something. Then I create a new tab for _offtopics_
     - ~<C-t>~: Create a new tab
     - ~gT~ or ~<M-[>~: Move to the Vim tab on the ~left~ of the current one
