@@ -98,6 +98,7 @@
     The /tl;dr:/ is Microsoft VS Code gave birth to the idea of extracting out from the editor the code responsilble for language specific code-highlight, formatting, and diagnosis.
     My initial attempt was to setup it following the [[https://vonheikemen.github.io/devlog/tools/neovim-lsp-client-guide/][guide on Neovim's LSP client]] by @VonHeikemen_(author of [[https://github.com/VonHeikemen/lsp-zero.nvim][LSP Zero]] Neovim plugin. But, I wanted it with all the bells and whistles with automatic downloads and stylish code completion.
     - [[https://github.com/neovim/nvim-lspconfig][nvim-lspconfig]] :: Pre-defined config for multiple Language Servers
+    - [[https://github.com/nvim-lua/lsp-status.nvim][lsp-status]] :: Updated info about Language Server attached to the current buffer.
     - [[https://github.com/williamboman/mason.nvim][mason]] :: Automatically download Language Servers
       - Default LS installed:
         - 'lua_ls': Neovim config files in Lua,
