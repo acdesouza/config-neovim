@@ -22,7 +22,7 @@ return {
           "n",                                                  -- at Normal mode
           "<Leader>o",                                          -- Map the <Leader> o keys
           ':lua require("oil.actions").close.callback()<CR>', { -- to close buffer without closing the window
-            noremap = true,                                     -- without recurcively expand it
+            noremap = true,                                     -- without recursively expand it
             silent = true                                       -- and without displaing it on command-line window
           })
       end
