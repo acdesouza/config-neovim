@@ -9,10 +9,10 @@ return {
       "yioneko/nvim-yati"
     },
     config = function()
-      require'nvim-treesitter.configs'.setup({
-        ensure_installed = { "lua", "html", "embedded_template", "css", "scss", "javascript", "ruby", "org" },
+      require 'nvim-treesitter.configs'.setup({
+        ensure_installed = { "lua", "html", "embedded_template", "css", "scss", "javascript", "ruby" },
         highlight = {
-          enable  = { "html", "xml", "eruby", "embedded_template", "css", "scss", "javascript", "org" },--true
+          enable  = { "html", "xml", "eruby", "embedded_template", "css", "scss", "javascript" }, --true
           disable = { "lua" }
         },
         additional_vim_regex_highlighting = { "org" }, --false,
