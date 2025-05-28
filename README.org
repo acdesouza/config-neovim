@@ -102,10 +102,11 @@
     - [[https://github.com/williamboman/mason.nvim][mason]] :: Automatically download Language Servers
       - Default LS installed:
         - 'lua_ls': Neovim config files in Lua,
-        - 'emmet_language_server', and 'html': HTML, CSS, JavaScript
+        - [[https://emmet.io][emmet_language_server]]', and 'html': HTML, CSS, JavaScript
       - Installed manually:
-        - Ruby: Solargraph :: Moved to config outside neovim due to error installing the solargraph-rails plugin.
+        - [[https://solargraph.org][Solargraph(Ruby)]] :: Moved to config outside neovim due to error installing the solargraph-rails plugin.
           Before using it, make sure the ~solargraph~ and ~solargraph-rails~ gems are installed and available. If you are using RVM you can install it on the ~<Ruby-version>@global~ gemset. Making it available to any gemset you create for that Ruby version.
+        - [[https://shopify.github.io/ruby-lsp/#with-other-editors][Ruby-LSP]] :: Just ~gem install ruby-lsp~ in the curret Ruby version used.
 
     - [[https://github.com/williamboman/mason-lspconfig.nvim][mason-lspconfig]] :: Bridge between nvim-lspconfig and mason
     - [[https://github.com/hrsh7th/nvim-cmp][nvim-cmp]] :: Completion engine plugin

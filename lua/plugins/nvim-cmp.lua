@@ -11,7 +11,7 @@ return {
 
     config = function()
       local cmp = require('cmp')
-      local cmp_format = require('lsp-zero').cmp_format()
+      --local cmp_format = require('lsp-zero').cmp_format()
       local luasnip = require('luasnip')
       cmp.setup({
         completion = {
@@ -30,7 +30,7 @@ return {
             luasnip.lsp_expand(args.body)
           end,
         },
-        formatting = cmp_format,
+        --formatting = cmp_format,
         window = {
           -- completion = cmp.config.window.bordered(),
           documentation = cmp.config.window.bordered(),
