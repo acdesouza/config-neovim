@@ -3,7 +3,7 @@ return {
     'nvim-lualine/lualine.nvim',
     dependencies = {
       'nvim-tree/nvim-web-devicons', opt = false,
-      'nvim-lua/lsp-status.nvim'
+      --'nvim-lua/lsp-status.nvim'
     },
     config = function()
       require('lualine').setup {
@@ -19,7 +19,7 @@ return {
               path = 1 -- 0 = just filename, 1 = relative path, 2 = absolute path
             }
           },
-          lualine_x = {'encoding', 'filetype', "require'lsp-status'.status()"},
+          lualine_x = {'encoding', 'filetype', 'lsp_status'},
         }
       }
     end
