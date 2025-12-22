@@ -12,6 +12,24 @@
    My way to use it is to open Vim in the the application's root directory. And, from there, I find the files I want to see and/or change.
    I usually use one window for a task. Splitting it to show each file I need to change for that particular task.
 
+*** Default operators
+
+    List of the operators I either use or want to remember.
+
+    - Tabs :: Tab management on normal mode
+      - ~gT~: previous tab
+      - ~gt~: next tab
+
+    - [[https://neovim.io/doc/user/various.html#_3.-commenting][Comments]] :: Toogle comments
+      - ~gc~: Toggles comment on current line
+
+      - Toggles comments on current function body when cursor inside function
+        - ~gcip~: Ruby and code
+        - ~gci]~: CSS and JavaScript
+
+      - Toggles comments on current function when cursor in the begining of the function
+        - ~gc%~: Ruby, CSS and JavaScript
+
 
 * Installation
 
