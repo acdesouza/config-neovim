@@ -12,13 +12,20 @@
    My way to use it is to open Vim in the the application's root directory. And, from there, I find the files I want to see and/or change.
    I usually use one window for a task. Splitting it to show each file I need to change for that particular task.
 
-*** Default operators
+*** Quick Reference
 
-    List of the operators I either use or want to remember.
+    List of the keymaps I either use or want to remember.
 
     - Tabs :: Tab management on normal mode
       - ~gT~: previous tab
       - ~gt~: next tab
+
+    - [[https://neovim.io/doc/user/diagnostic/#diagnostic-defaults][Diagnosis]] :: Default framework for displaying errors or warnings from external tools
+      - ~]d~: jumps to the next diagnostic in the buffer.
+      - ~[d~: jumps to the previous diagnostic in the buffer.
+      - ~]D~: jumps to the last diagnostic in the buffer.
+      - ~[D~: jumps to the first diagnostic in the buffer.
+      - ~<C-w>d~: shows diagnostic at cursor in a floating window.
 
     - [[https://neovim.io/doc/user/various.html#_3.-commenting][Comments]] :: Toogle comments
       - ~gc~: Toggles comment on current line
