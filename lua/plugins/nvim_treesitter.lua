@@ -10,7 +10,7 @@ return {
     },
     config = function()
       require 'nvim-treesitter.configs'.setup({
-        ensure_installed = { "lua", "html", "embedded_template", "css", "scss", "javascript", "ruby" },
+        ensure_installed = { "html", "embedded_template", "css", "scss", "javascript", "ruby" },
         highlight = {
           enable  = { "html", "xml", "eruby", "embedded_template", "css", "scss", "javascript" }, --true
           disable = { "lua" }
