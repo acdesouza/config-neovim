@@ -125,6 +125,7 @@
         - [[https://solargraph.org][Solargraph(Ruby)]] :: Moved to config outside neovim due to error installing the solargraph-rails plugin.
           Before using it, make sure the ~solargraph~ and ~solargraph-rails~ gems are installed and available. If you are using RVM you can install it on the ~<Ruby-version>@global~ gemset. Making it available to any gemset you create for that Ruby version.
         - [[https://shopify.github.io/ruby-lsp/#with-other-editors][Ruby-LSP]] :: Just ~gem install ruby-lsp~ in the curret Ruby version used.
+        - [[https://herb-tools.dev/][Herb]] :: Language server build on top of the HTML-aware ERB(HTML+ERB=HERB) toolchain by [[https://marcoroth.dev/][Marco Roth]]. Install it throght ~npm install -g @herb-tools/language-server~ in the npm available to the project.
 
     - [[https://github.com/williamboman/mason-lspconfig.nvim][mason-lspconfig]] :: Bridge between nvim-lspconfig and mason
     - [[https://github.com/hrsh7th/nvim-cmp][nvim-cmp]] :: Completion engine plugin

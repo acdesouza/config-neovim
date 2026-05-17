@@ -1,5 +1,6 @@
 vim.lsp.enable('emmet_language_server')
 vim.lsp.enable('ruby_lsp')
+vim.lsp.enable('herb_language_server')
 vim.lsp.enable('solargraph')
 
 vim.lsp.config('*', {
